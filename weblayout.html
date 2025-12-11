@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Float Layout</title>
+
+<style>
+
+    body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+        background: #e9edf5;
+    }
+
+    /* Header */
+    #header {
+        background: #355fa3;
+        color: white;
+        padding: 25px 0;
+        text-align: center;
+        font-size: 32px;
+        font-weight: bold;
+    }
+
+    /* Navigation */
+    #navbar {
+        background: #3e72b8;
+        padding: 18px;
+        text-align: center;
+    }
+
+    .nav-box {
+        float: left;
+        width: 22%;
+        margin: 0 1%;
+        padding: 12px 0;
+        background: #8ea5d8;
+        color: #fff;
+        font-size: 18px;
+        border-radius: 4px;
+    }
+
+    .clearfix {
+        clear: both;
+    }
+
+    /* Sidebar */
+    #sidebar {
+        float: left;
+        width: 20%;
+        background: #d6e7d0;
+        padding: 18px;
+        margin-top: 15px;
+    }
+
+    #sidebar h3 {
+        margin-top: 0;
+    }
+
+    #sidebar p {
+        border-bottom: 1px solid #aac2ab;
+        padding: 8px 0;
+        margin: 0;
+    }
+
+    /* Main content */
+    #main {
+        float: left;
+        width: 74%;
+        background: #ffffff;
+        padding: 20px;
+        margin-left: 15px;
+        margin-top: 15px;
+    }
+
+    .float-col {
+        float: left;
+        width: 46%;
+        background: #e7d3ec;
+        padding: 15px;
+        margin: 10px 2%;
+        border-radius: 3px;
+    }
+
+    /* About section */
+    #about {
+        clear: both;
+        background: #f7e4a9;
+        padding: 20px;
+        margin: 20px;
+        border-radius: 4px;
+    }
+
+    #about h3 {
+        margin-top: 0;
+    }
+
+    /* Footer */
+    #footer {
+        background: #3a5a87;
+        color: white;
+        text-align: center;
+        padding: 15px;
+        margin-top: 25px;
+        font-size: 15px;
+    }
+
+</style>
+</head>
+
+<body>
+
+    <div id="header">Float-Based Web Layout</div>
+
+    <div id="navbar">
+        <div class="nav-box">Home</div>
+        <div class="nav-box">About</div>
+        <div class="nav-box">Services</div>
+        <div class="nav-box">Contact</div>
+        <div class="clearfix"></div>
+    </div>
+
+    <div id="sidebar">
+        <h3>Sidebar</h3>
+        <p>Menu Item 1</p>
+        <p>Menu Item 2</p>
+        <p>Menu Item 3</p>
+        <p>Menu Item 4</p>
+        <p>Menu Item 5</p>
+    </div>
+
+    <div id="main">
+        <h2>Main Content Area</h2>
+        <p>This layout is created using CSS float properties. The sidebar is floated left, and the main content is floated right.</p>
+
+        <div class="float-col">
+            <h3>Float Column 1</h3>
+            <p>This column is floated left. Float was commonly used before Flexbox and Grid.</p>
+        </div>
+
+        <div class="float-col">
+            <h3>Float Column 2</h3>
+            <p>This column is also floated left. Float layouts require clearing of floats.</p>
+        </div>
+
+        <div class="clearfix"></div>
+    </div>
+
+    <div id="about">
+        <h3>About Float Layouts</h3>
+        <p>CSS float positions an element left or right, allowing text and inline elements to wrap.</p>
+        <p>Float is useful for wrapping text around images, but no longer recommended for page layouts.</p>
+    </div>
+
+    <div id="footer">
+        © 2023 Float Layout Example. All rights reserved.
+    </div>
+
+</body>
+</html>
